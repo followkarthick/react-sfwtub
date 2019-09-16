@@ -16,7 +16,7 @@ const CheckBox = () => {
   });
 
   return (
-    <div id="mainContain">
+    <div >
 
 
       <div className="row" >

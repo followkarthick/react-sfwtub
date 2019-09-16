@@ -21,12 +21,9 @@ h1, p {
   clear: both;
 }
 
-#mainContain {
-	background: rgb(226, 98, 98);
-	color: white;
-}
+#
 
-#content {
+#mainContain {
 	background: rgba(200, 238, 165, 0.904);
-	color: white;
+	color: rgb(10, 2, 2);
 }
