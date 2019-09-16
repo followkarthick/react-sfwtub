@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import CheckBox from './CheckBox'
+import ServiceGroup from './ServiceGroup'
 import './style.css';
 import axios from 'axios';
 
@@ -29,9 +29,9 @@ componentDidMount() {
     const data = this.state.serviceGroupList;
 console.log(data);
     return (
-      <div>
+      <div id="mainContain">
                 
-        <CheckBox/>
+        <ServiceGroup/>
       </div>
     );
   }
