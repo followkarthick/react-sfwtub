@@ -23,6 +23,23 @@ h1, p {
 
 
 #mainContain {
-	background: rgba(200, 238, 165, 0.904);
+	background: cornflowerblue;
 	color: rgb(10, 2, 2);
+}
+
+
+.boxWidth {
+  margin: 10px;
+  height: 450px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.boxColor1 {
+  background-color: bisque;
+}
+.txtBox{
+
+  margin-left: 85px;
+    border-radius: 5px;
 }
