@@ -17,6 +17,7 @@ const ServiceGroup = () => {
     getDataFromAPI();
   });
 
+
   return (
     <div >
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-
+import ItemList from './ItemList';
 import ServiceGroup from './ServiceGroup'
 import './style.css';
 
@@ -25,6 +25,9 @@ console.log(data);
         <h3> Service Groups</h3>   
         <input className="txtBox" type="text" placeholder=" Enter your search here" />    
         <ServiceGroup/>
+         <ItemList/>
+
+         
       </div>
     );
   }
