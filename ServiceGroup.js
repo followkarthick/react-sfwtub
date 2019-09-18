@@ -23,32 +23,28 @@ const ServiceGroup = () => {
         {details.map(servG => {
 
           return (
-            <div className="column boxWidth boxColor1" >
+            <div className="column">
+            <div className="card">
 
-
+            <header className="card-header">
               <h4>
                 <label>
                   <input type="checkbox"  />
                   {servG.service_group_name }
                 </label>
               </h4>
-
+            </header>
 
               {servG.services.map(service => {
                 return (
-
-                  
-                    <h6>
+                      <div>        
                       <label>
                         <input type="checkbox" />
                         {service.service_name}
                       </label>
-                    </h6>
-
-                 
-
-                )
+                         </div>            )
               })}
+              </div>
             </div>
           )
         })}
