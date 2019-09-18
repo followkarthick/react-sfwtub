@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import CheckboxList from './CheckboxList';
+
 import './style.css';
 
 const API_URL = "https://cpmtest.app.wtcdev2.paas.fedex.com/cpm/R3/search-options-service/serviceGroup";
@@ -18,37 +20,7 @@ const ServiceGroup = () => {
   return (
     <div >
 
-
-      <div className="row" >
-        {details.map(servG => {
-
-          return (
-            <div className="column">
-            <div className="card">
-
-            <header className="card-header">
-              <h4>
-                <label>
-                  <input type="checkbox"  />
-                  {servG.service_group_name }
-                </label>
-              </h4>
-            </header>
-
-              {servG.services.map(service => {
-                return (
-                      <div>        
-                      <label>
-                        <input type="checkbox" />
-                        {service.service_name}
-                      </label>
-                         </div>            )
-              })}
-              </div>
-            </div>
-          )
-        })}
-      </div>
+<CheckboxList data={details} />
 
 
 
